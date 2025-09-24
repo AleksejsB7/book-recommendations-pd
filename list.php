@@ -22,6 +22,7 @@
     } else {
         echo "0 results";
     }
-    echo 
+    echo  "<a href='http://localhost:8000/'>Pievienot Grāmatu</a>";
+    echo  "<a href='http://localhost:8000/submit.php'> Apskatīt pievienoto Grāmatu sadaļu</a>";
     $conn->close();
     ?> 

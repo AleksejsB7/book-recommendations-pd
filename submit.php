@@ -29,6 +29,7 @@ VALUES ('$full_name', '$book_title' , '$review_text' , '$rating')";
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
-
+    echo  "<a href='http://localhost:8000/list.php'>Apskatīt Grāmatas</a>";
+    echo  "<a href='http://localhost:8000/'>Pievienot Grāmatu</a>";
     $conn->close();
     ?> 
