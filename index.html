@@ -1,12 +1,34 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Grāmatu vērtēšana</h1>
+    <div class="form">
+      <form action="/action_page.php" method="post">
+        <label for="name">First name:</label>
+        <input type="text" id="name" name="name" /><br /><br />
+
+        <label for="surname">Last name:</label>
+        <input type="text" id="surname" name="surname" /><br /><br />
+
+        <select name="rating" id="rating">
+          <option value="1">Nelasāma</option>
+          <option value="2">Slikta</option>
+          <option value="3">Viduvēja</option>
+          <option value="4">Laba</option>
+          <option value="5">Lieliska</option>
+        </select>
+        <br /><br />
+        <textarea id="review" name="review" rows="4" cols="50"></textarea
+        ><br /><br />
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
 </html>
